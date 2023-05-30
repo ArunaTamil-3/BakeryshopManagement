@@ -1,0 +1,43 @@
+<html>
+<head>
+<!----- Start Menu ------>
+<title>SALES PAGE</title>
+<body>
+<LINK REL="STYLESHEET" TYPE="TEXT/CSS"HREF="productstyle.css">
+<div class="page-blocks">
+<div class="title">
+PRODUCT
+</div>
+<div class="flex-block">
+<div class="appointment-flex-item">
+<div class="appointment-flex-img">
+<div class="appointment-text">
+</div>
+</div>
+</div>
+<div class="appointment-flex-item">
+<div class="appointment-form">
+<form action="productdb.php" method="POST">
+<input type="text" placeholder="prouduct ID" name="pi" required><br/>
+<input type="text" placeholder="prouduct" name="pr" required><br/>
+<select class="option" name="sc">
+<option disabled="disabled" selected="selected">--Stock Range----</option>
+<option> 1st Class</option>
+<option> 2nd class</option>
+</select>
+<input type="text" placeholder="Cost" name="cn" required><br/>
+<input type="date" placeholder="Date" name="dt" required><br/>
+<br><br>
+<input type="submit" value="submit" id="submit" name="submit" onclick="myfunction()">
+<center><a href="header.html" name="bk">BACK</a></center>
+<script>
+function myfunction(){
+	alert("Successfully :)");
+}
+</script>
+</form>
+</div>
+</div>
+</body>
+</head>
+</html>
